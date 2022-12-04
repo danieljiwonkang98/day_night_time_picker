@@ -24,16 +24,17 @@ class ActionButtons extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
-          TextButton(
-            style: (timeState.widget.cancelButtonStyle ??
-                    timeState.widget.buttonStyle) ??
-                defaultButtonStyle,
-            onPressed: timeState.onCancel,
-            child: Text(
-              timeState.widget.cancelText,
-              style: timeState.widget.cancelStyle,
-            ),
-          ),
+          // Comment to remove Cancel Button
+          // TextButton(
+          //   style: (timeState.widget.cancelButtonStyle ??
+          //           timeState.widget.buttonStyle) ??
+          //       defaultButtonStyle,
+          //   onPressed: timeState.onCancel,
+          //   child: Text(
+          //     timeState.widget.cancelText,
+          //     style: timeState.widget.cancelStyle,
+          //   ),
+          // ),
           SizedBox(width: timeState.widget.buttonsSpacing ?? 0),
           TextButton(
             onPressed: timeState.onOk,
